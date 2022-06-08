@@ -1,2 +1,0 @@
-# JavaScritp
-Aprendiendo JavaScritp
