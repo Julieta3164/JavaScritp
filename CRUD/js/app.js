@@ -14,7 +14,7 @@ el.innerHTML = data + ' ' + name;
     }
 };
 
-this.FetcAll = function () {
+this.FetchAll = function () {
     let data = '';
     if(this.countries.length > 0){
         for(i = 0; i < this.countries.length; i++){
@@ -27,9 +27,20 @@ this.FetcAll = function () {
     }
     this.Count(this.countries.length);
     return this.el.innerHTML = data;
-
-}
-
+};
+this.Add = function (){
+    el = document.getElementById('add-name');
+    //get the value
+    let country = el.value;
+    if (country) {
+        //Add the new value
+        this.countries.push(country.trim());
+        //reset input value
+        this.el.value = '';
+        //dislay the new list
+        this.FetchAll();
+    }
+};
 
 
 
