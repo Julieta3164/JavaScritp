@@ -1,8 +1,8 @@
 let app = new function() {
 this.el = document.getElementById('countries');
-this.countries = [ 'France', 'Germany', 'Englad', 'Spain', 'Belgium', 'Italy', 'Portugal', 'Irland', 'Ecuador'];
-this.Count = function (data){
-    let el =document.getElementById ('counter');
+this.countries = ['France', 'Germany', 'Englad', 'Spain', 'Belgium', 'Italy', 'Portugal', 'Irland', 'Ecuador'];
+this.Count = function (data) {
+    let el = document.getElementById('counter');
     let name = 'country';
     if (data){
 if (data > 1) {
@@ -19,15 +19,16 @@ this.FetchAll = function () {
     if(this.countries.length > 0){
         for(i = 0; i < this.countries.length; i++){
             data += '<tr>';
-            data += '<td>' + this.countries[i] + '<td>';
-            data += '<td><button onclick="app.Edit(' + i + ')"> Edit</button><td>';
-            data += '<td><button onclick="app.Delete(' + i + ')"> Delete</button><td>';
+            data += '<td class="pais">' + this.countries[i] + '<td>';
+            data += '<td class="btn-edit"><button class= "edit" onclick="app.Edit(' + i + ')"> <i class="bi bi-pencil-square"></i></button><td>';
+            data += '<td class="btn-delete"><button class= "delete" onclick="app.Delete(' + i + ')"><i class="bi bi-trash-fill"></i></button><td>';
             data += '</tr>';
         }
     }
     this.Count(this.countries.length);
     return this.el.innerHTML = data;
 };
+
 this.Add = function (){
     el = document.getElementById('add-name');
     //get the value
@@ -36,7 +37,7 @@ this.Add = function (){
         //Add the new value
         this.countries.push(country.trim());
         //reset input value
-        this.el.value = '';
+        el.value = '';
         //display the new list
         this.FetchAll();
     }

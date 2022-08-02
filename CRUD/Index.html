@@ -16,20 +16,20 @@
     <main>
 
 <form action="javascript(0);" method="POST" onsubmit="app.add() "></form>
-<input type="text" id="add-name" placeholder="country">
-<input type="submit" value="add">
+<input type="text" id="add-name">
+<input type="submit" class="add-name" value="add">
 
 <div id="spoiler">
     <form action="javascript:void(0)" method="POST" id="saveEdit"></form>
     <input type="text" id="edit-name">
-    <input type="submit" value="Edit"/> <a onclick="CloseInput()"></a>
+    <input type="submit" class="edit-name" value="Edit"/> <a onclick="CloseInput()"></a>
 </div>
 
 <p id="counter"></p>
 
 <table>
     <tr>
-        <th>Name</th>
+        <th class="title">Name</th>
     </tr>
     <tbody id="countries">
 
