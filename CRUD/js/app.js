@@ -1,6 +1,6 @@
 let app = new function() {
 this.el = document.getElementById('countries');
-this.countries = [ 'France', 'Germany', 'Englad', 'Spain', 'Belgium', 'Italy', 'Portugal', 'Irland',];
+this.countries = [ 'France', 'Germany', 'Englad', 'Spain', 'Belgium', 'Italy', 'Portugal', 'Irland', 'Ecuador'];
 this.Count = function (data){
     let el =document.getElementById ('counter');
     let name = 'country';
@@ -37,13 +37,41 @@ this.Add = function (){
         this.countries.push(country.trim());
         //reset input value
         this.el.value = '';
-        //dislay the new list
+        //display the new list
         this.FetchAll();
     }
 };
+this.Edit = function (item) {
+    let el = document.getElementById ('edit-name');
+    //display value in the field
+    el.value = this.countries[item];
+    //display field
+    document.getElementById('spoiler').style.display = 'block';
+    self = this;
+    document.getElementById('saveEdit').onsubmit = function(){
+        //get value
+        let country = el.value;
+        if (country){
+            //edit value
+            self.countries.splice(item, 1, country.trim());
+            //display the new list
+            self.FetchAll();
+            //hide fields
+            CloseImput();
+        }
+    }
+};
 
+this.Delete = function (item){
+    //delete the current row
+    this.countries.splice(item, 1);
+    //display the new list
+    this.FetchAll ();
+};
 
+}
 
-
-
+app.FetchAll();
+function CloseImput(){
+    document.getElementById('spoiler').style.display = 'none';
 }
