@@ -1,6 +1,6 @@
 let app = new function() {
 this.el = document.getElementById('countries');
-this.countries = ['France', 'Germany', 'Englad', 'Spain', 'Belgium', 'Italy', 'Portugal', 'Irland', 'Ecuador'];
+this.countries = ['France', 'Germany', 'Englad', 'Spain', 'Belgium', 'Italy', 'Portugal', 'Irland'];
 this.Count = function (data) {
     let el = document.getElementById('counter');
     let name = 'country';

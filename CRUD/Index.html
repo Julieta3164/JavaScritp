@@ -15,14 +15,15 @@
 
     <main>
 
-<form action="javascript(0);" method="POST" onsubmit="app.add() "></form>
+
 <input type="text" id="add-name">
-<input type="submit" class="add-name" value="add">
+<input type="button" class="add_name" value="add" onclick="app.Add() ">
 
 <div id="spoiler">
-    <form action="javascript:void(0)" method="POST" id="saveEdit"></form>
+    <form action="javascript:void(0)" method="POST" id="saveEdit">
     <input type="text" id="edit-name">
-    <input type="submit" class="edit-name" value="Edit"/> <a onclick="CloseInput()"></a>
+    <input type="submit" class="edit_name" value="Edit"/> <a onclick="CloseInput()"></a>
+</form>
 </div>
 
 <p id="counter"></p>

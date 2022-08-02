@@ -18,7 +18,7 @@ main{
     font-size: 100%;
     padding: 1%;
 }
-.add-name {
+.add_name {
     width: 15%;
     padding: 0.5%;
     background: rgb(43, 110, 210);
@@ -31,7 +31,7 @@ main{
     padding: 1%;
 }
 
-.edit-name{
+.edit_name{
     width: 15%;
     padding: 0.5%;
     background: rgb(43, 110, 210);
