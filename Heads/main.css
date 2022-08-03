@@ -9,7 +9,7 @@ font-size: 30px;
 }
 
 .container{
-    border: solid 3px black;
+
     width: 350px;
     padding: 50px;
     position: absolute;
@@ -109,3 +109,115 @@ button{
     background: #006e99;
     color: white;
 }
+
+
+
+@media (max-width: 390px) {
+    body{
+background-image: url(./images/movil\ .jpeg);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+font-family: "WaltographRegular";
+}
+    .container{
+        width: 50%;
+        position: absolute;
+        transform: translate(-20%,-40%);
+
+
+        -webkit-perspective: 300px;
+        perspective: 30px;
+    }
+    
+    .coin{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        margin: 0px 200% 200% 0%;
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+    }
+    
+    .coin img{
+        width: 200px;
+    }
+    
+    .face,.cross{
+        position: absolute;
+        width: 10%;
+        height: 10%;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+    }
+    
+    .cross{
+        transform: rotateX(180deg);
+    }
+    
+    .stats{
+        display: flex;
+        justify-content: space-evenly;
+        color: #101020;
+        text-align: center;
+        font-weight: 50;
+        margin-bottom: 4px;
+        margin-top: 5px;
+        box-shadow: 0 0 20px rgba(0,139,253,0.25);
+    }
+    
+    .stats p:nth-last-child(1){
+    margin-left: 5%;
+    }
+    
+    @keyframes spin-cross{
+        0%{
+            transform: rotateX(0);
+        }
+        100%{
+            transform: rotateX(1980deg);
+        }
+    }
+    @keyframes spin-face{
+        0%{
+            transform: rotateX(0);
+        }
+        100%{
+            transform: rotateX(2160deg);
+        }
+    }
+    
+    .buttons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    button{
+        width: 50px;
+        padding: 15px 0;
+        border: none;
+        font-family: "WaltographRegular";
+        font-size: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    #play-button{
+        background-color: #b93c3c;
+        color: #ffffff;
+    }
+    
+    #flip-button:disabled{
+        background-color: #e1e0ee;
+        border-color: #e1e0ee;
+        color: #101020;
+    }
+    
+    #reset-button{
+        background: #006e99;
+        color: white;
+    }
+}
+
+
