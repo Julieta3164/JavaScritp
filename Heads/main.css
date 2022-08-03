@@ -121,27 +121,30 @@ background-attachment: fixed;
 background-size: cover;
 font-family: "WaltographRegular";
 }
-    .container{
-        width: 50%;
-        position: absolute;
-        transform: translate(-20%,-40%);
+.container{
 
-
-        -webkit-perspective: 300px;
-        perspective: 30px;
-    }
+    width: 55%;
+    position: absolute;
+    transform: translate(-20%,-20%);
+    top: 15%;
+    box-shadow: 1px 3px 3px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    -webkit-perspective: 30%;
+    perspective: 30%;
+}
     
     .coin{
         height: 100%;
         width: 100%;
         position: relative;
-        margin: 0px 200% 200% 0%;
+        margin: 10px 20% 200% 0%;
         -webkit-transform-style: preserve-3d;
                 transform-style: preserve-3d;
     }
     
     .coin img{
-        width: 200px;
+        width: 150px;
+        margin-bottom: 200%;
     }
     
     .face,.cross{
@@ -161,9 +164,10 @@ font-family: "WaltographRegular";
         justify-content: space-evenly;
         color: #101020;
         text-align: center;
-        font-weight: 50;
-        margin-bottom: 4px;
-        margin-top: 5px;
+        font-weight: 5;
+        padding-top: 80%;
+        margin-bottom: 1%;
+        margin-top: 10%;
         box-shadow: 0 0 20px rgba(0,139,253,0.25);
     }
     
