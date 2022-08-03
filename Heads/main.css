@@ -4,28 +4,28 @@ background-position: center center;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
+font-family: "WaltographRegular";
+font-size: 30px;
 }
-/* .container{
-    background-color: #42c974;
-    opacity: 60%;
-    width: 120px;
-    height: 120px;
-    padding: 55px;
+.container{
+    border: solid 3px black;
+    width: 350px;
+    padding: 50px;
     position: absolute;
-    transform: translate(-120%,-180%);
+    transform: translate(-50%,-50%);
     top: 50%;
-    left: 50%;
+    left: 25%;
     box-shadow: 15px 30px 35px rgba(0,0,0,0.1);
     border-radius: 10px;
     -webkit-perspective: 300px;
     perspective: 300px;
-} */
+}
 
 .coin{
     height: 200px;
     width: 200px;
     position: relative;
-    margin: 32px 300px;
+    margin: 0px 10px 95px 30px;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
 }
@@ -41,4 +41,47 @@ background-size: cover;
 }
 .tails{
     transform: rotateX(180deg);
+}
+
+@keyframes spin-tails{
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(1980deg);
+    }
+}
+@keyframes spin-heads{
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(2160deg);
+    }
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    width: 150px;
+    padding: 15px 0;
+    border: none;
+    font-family: "WaltographRegular";
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#flip-button{
+    background-color: #b93c3c;
+    color: #ffffff;
+}
+#flip-button:disabled{
+    background-color: #e1e0ee;
+    border-color: #e1e0ee;
+    color: #101020;
+}
+#reset-button{
+    background: #006e99;
+    color: white;
 }
