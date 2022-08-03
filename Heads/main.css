@@ -43,6 +43,21 @@ font-size: 30px;
     transform: rotateX(180deg);
 }
 
+.stats{
+    display: flex;
+    color: #101020;
+    text-align: center;
+    font-weight: 500;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    box-shadow: 0 0 20px rgba(0,139,253,0.25);
+}
+
+.stats p:nth-last-child(1){
+margin-left: 50%;
+}
+
 @keyframes spin-tails{
     0%{
         transform: rotateX(0);
