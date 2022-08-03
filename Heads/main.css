@@ -7,6 +7,7 @@ background-size: cover;
 font-family: "WaltographRegular";
 font-size: 30px;
 }
+
 .container{
     border: solid 3px black;
     width: 350px;
@@ -29,17 +30,20 @@ font-size: 30px;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
 }
+
 .coin img{
     width: 300px;
 }
-.heads,.tails{
+
+.face,.cross{
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
 }
-.tails{
+
+.cross{
     transform: rotateX(180deg);
 }
 
@@ -58,7 +62,7 @@ font-size: 30px;
 margin-left: 50%;
 }
 
-@keyframes spin-tails{
+@keyframes spin-cross{
     0%{
         transform: rotateX(0);
     }
@@ -66,7 +70,7 @@ margin-left: 50%;
         transform: rotateX(1980deg);
     }
 }
-@keyframes spin-heads{
+@keyframes spin-face{
     0%{
         transform: rotateX(0);
     }
@@ -74,10 +78,12 @@ margin-left: 50%;
         transform: rotateX(2160deg);
     }
 }
+
 .buttons{
     display: flex;
     justify-content: space-between;
 }
+
 button{
     width: 150px;
     padding: 15px 0;
@@ -87,15 +93,18 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
+
 #flip-button{
     background-color: #b93c3c;
     color: #ffffff;
 }
+
 #flip-button:disabled{
     background-color: #e1e0ee;
     border-color: #e1e0ee;
     color: #101020;
 }
+
 #reset-button{
     background: #006e99;
     color: white;

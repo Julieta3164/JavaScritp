@@ -1,5 +1,5 @@
-let heads = 0;
-let tails = 0;
+let face = 0;
+let cross = 0;
 let coin = document.querySelector(".coin");
 let flipBtn = document.querySelector("#flip-button");
 let resetBtn = document.querySelector("#reset-button"); 
@@ -9,21 +9,28 @@ flipBtn.addEventListener("click", () => {
     coin.style.animation = "none";
     if(i){
         setTimeout(function(){
-            coin.style.animation = "spin-heads 10s forwards";
+            coin.style.animation = "spin-face 10s forwards";
         }, 100);
-        heads++;
+        face++;
     }
     else{
         setTimeout(function(){
-            coin.style.animation = "spin-tails 10s forwards";
+            coin.style.animation = "spin-cross 10s forwards";
         }, 100);
-        tails++;
+        cross++;
     }
-    setTimeout(updateStats, 3000);
+    setTimeout(updateStats, 10000);
     disableButton();
 });
 
 function updateStats (){
-    document.querySelector("#heads-count").textContent = `Minnie: ${heads}`;
-    document.querySelector("#tails-count").textContent = `Mickey: ${tails}`;
+    document.querySelector("#face-count").textContent = `Minnie: ${face}`;
+    document.querySelector("#cross-count").textContent = `Mickey: ${cross}`;
 }
+
+resetBtn.addEventListener("click",() =>{
+    coin.style.animation="none";
+    face = 0;
+    cross = 0;
+    updateStats();
+});
