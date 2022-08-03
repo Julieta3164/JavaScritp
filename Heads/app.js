@@ -1,7 +1,7 @@
 let face = 0;
 let cross = 0;
 let coin = document.querySelector(".coin");
-let flipBtn = document.querySelector("#flip-button");
+let flipBtn = document.querySelector("#play-button");
 let resetBtn = document.querySelector("#reset-button"); 
 
 flipBtn.addEventListener("click", () => {
