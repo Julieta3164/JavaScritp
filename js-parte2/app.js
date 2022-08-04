@@ -11,7 +11,7 @@ function comparar(){
     document.getElementById("comparacion").innerHTML= "Este es el mayor: " +mayor;
 }
 //Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres.
-function comparar(){
+/* function comparar(){
     let numero1=parseFloat(document.getElementById("numb1").value);
     let numero2=parseFloat(document.getElementById("numb2").value);
     let numero3=parseFloat(document.getElementById("numb3").value);
@@ -19,8 +19,9 @@ function comparar(){
 
     if (numero1>numero2){
         mayor=numero1;
-    }else (numero1>numero3) {
+    }else (numero1>numero3){
+        mayor=numero3;
     }
 
-   document.getElementById("comparacion").innerHTML= "Este es el mayor: ";
-}
+document.getElementById("comparacion").innerHTML= "Este es el mayor: ";
+} */
