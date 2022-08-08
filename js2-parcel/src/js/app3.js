@@ -13,10 +13,10 @@ button.addEventListener('click', () => {
 
 function result3(num) {
 if (num % 2 === 0) {
-    divisible.innerHTML=`${num} si es divisible por 2`;
+    divisible.innerHTML=`${num} si es divisible entre 2`;
         
     }
     else {
-        divisible.innerHTML=`${num} no es divisible por 2`;
+        divisible.innerHTML=`${num} no es divisible entre 2`;
     }
 }
