@@ -8,5 +8,5 @@ function comparar(){
     }else{
         mayor=numero2;
     }
-    document.getElementById("comparacion").innerHTML= "Este es el mayor: " +mayor;
+    document.getElementById("text1").innerHTML= "Este es el mayor: " +mayor;
 }
