@@ -1,27 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/styles.scss">
+    <title>Micro Ejercicio JS 2</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Micro Ejercicio JS 2</h1>
+        <img src="./img/10212530-100196956490_3-s5-v1.png" alt="">
+    </header>
+
+    <main>
     <!--Ejercicio 1-->
-<div>
-    <input type="text" id="n1">
-    <input type="text" id="n2">
-    <button id="btn" onclick="comparar()">Comparar</button>
-    <div id="comparacion"></div>
-</div>
+    <h3> 1) Escribe dos números para comparar cual es el mayor de ellos</h3>
+    <div class="micro1">
+        <input type="text" id="n1" placeholder="Ingresa 1er número">
+        <input type="text" id="n2" placeholder="Ingresa 2do número">
+        <button id="btn1" onclick="comparar()">Pulse aquí</button>
+        <div id="text1"></div>
+    </div>
 
-<!--Ejercicio 2-->
-<div>
-    <input type="text" id="numb1">
-    <input type="text" id="numb2">
-    <input type="text" id="numb3">
-    <button id="btn" onclick="comparar2()">Comparar</button>
-    <div id="comparacion-2"></div>
-</div>
+    <!--Ejercicio 2-->
+    <h3> 2) Escribe tres números para comparar cual es el mayor de ellos</h3>
+    <div class="micro2">
+        <input type="text" id="num1" placeholder="Ingresa 1er número">
+        <input type="text" id="num2" placeholder="Ingresa 2do número">
+        <input type="text" id="num3" placeholder="Ingresa 3er número">
+        <button id="button" onclick="comparar2()">Pulse aquí</button>
+        <div id="comparacion2"></div>
+    </div>
 
+    <!--Ejercicio 3-->
+    <h3> 3) Escribe un números para determinar si es divisible entre 2</h3>
+    <div class="micro3">
+        <input type="text" id="une-number" placeholder="Ingresa número">
+        <button id="divisble">Pulse aquí</button>
+        <div id="text"></div>
+    </div>
+
+    <!--Ejercicio 4-->
+    <h3> 4) Escribe una frase para saber cuantas letra "A" contiene</h3>
+    <div class="micro4">
+        <input type="text" id="one-lyrics" placeholder="Escribe una Frase">
+        <button id="btn-lyrics">Pulse aquí</button>
+        <div id="lyrics"></div>
+    </div>
+
+    <!--Ejercicio 5-->
+    <h3> 5) Escribe una frase para saber las vocales contiene</h3>
+    <div class="micro5">
+        <input type="text" id="input5" placeholder="Escribe una Frase">
+        <button id="btn5">Pulse aquí</button>
+        <div id="text5"></div>
+    </div>
+
+
+    <!--Ejercicio 6-->
+    <h3> 6) Escribe una frase para saber cuantas vocales contiene</h3>
+    <div class="micro6">
+        <input type="text" id="input6" placeholder="Escribe una Frase">
+        <button id="btn6">Pulse aquí</button>
+        <div id="text6"></div>
+    </div>
+
+    <!--Ejercicio 7-->
+    <h3> 7) Escribe una frase para saber cuantas veces aparece cada vocal</h3>
+    <div class="micro7">
+        <input type="text" id="input7" placeholder="Escribe una Frase">
+        <button id="btn7">Pulse aquí</button>
+        <div id="text7"></div>
+    </div>
+
+
+    <!--Ejercicio 8-->
+    <h3> 8) Escribe un numero para ver si es divisible entre 2, 3, 5 o 7</h3>
+    <div class="micro8">
+        <input type="text" id="input8" placeholder="Escribe un Número">
+        <button id="btn8">Pulse aquí</button>
+        <div id="text8"></div>
+    </div>
+
+
+    <!--Ejercicio 9-->
+    <h3> 9) Por cual de los número anteriores es divisible </h3>
+    <div class="micro9">
+        <input type="text" id="input9" placeholder="Escribe un Número">
+        <button id="btn9">Pulse aquí</button>
+        <div id="text9"></div>
+    </div>
+
+    <!--Ejercicio 10-->
+    <h3> 10) Escribe un número para saber sus divisores</h3>
+    <div class="micro10">
+        <input type="text" id="input10" placeholder="Escribe un Número">
+        <button id="btn10">Pulse aquí</button>
+        <div id="text10"></div>
+    </div>
+
+    <!--Ejercicio 11-->
+    <h3> 11) Escribe dos número para saber sus divisores</h3>
+    <div class="micro11">
+        <input type="text" id="input11A" placeholder="Escribe un Número">
+        <input type="text" id="input11B" placeholder="Escribe un Número">
+        <button id="btn11">Pulse aquí</button>
+        <div id="text11"></div>
+    </div>
+
+    <!--Ejercicio 12-->
+
+    <h3> 12) Escribe un número para saber si es primo </h3>
+    <div class="micro12">
+        <input type="text" id="input12" placeholder="Escribe un Número">
+        <button id="btn12">Pulse aquí</button>
+        <div id="text12"></div>
+    </div>
+
+</main>
+
+    <footer>
+        <h4>Juliet G, Linarez N</h4>
+        <img src="./img/20054902-100196956490_3-s5-v1.png" alt="">
+    </footer>
+<script src="./app.js"></script>
 </body>
-<script src="app.js"></script>
+
 </html>
