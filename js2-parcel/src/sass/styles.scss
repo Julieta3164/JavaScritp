@@ -1,23 +1,28 @@
 body{
-    margin: 1%;
-    padding: 3%;
+    margin: 3%;
     background: rgb(206, 203, 203);
     text-align: justify;
     font-family: 'Dancing Script', cursive;
 }
 
 header{
+    width: auto;
     justify-content: center;
-    margin: 2%;
+    margin-bottom: 2%;
     display: flex;
     align-items: center;
+    border: 2px solid black;
     img{
         width: 20%;
     }
 }
 
 
-
+main {
+    padding: 2%;
+    width: auto;
+    border: 2px solid black;
+}
 
 
 .micro1{
@@ -137,5 +142,17 @@ header{
         margin: 1%;
         padding: 1%;
         border: solid 1px black;
+    }
+}
+
+footer{
+    width: auto;
+    justify-content: center;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    img{
+        width: 10%;
     }
 }
