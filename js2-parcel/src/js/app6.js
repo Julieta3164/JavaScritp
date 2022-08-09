@@ -1,20 +1,17 @@
-let inputUsed = document.getElementById("input6");
-let button = document.getElementById("btn6");
-let resultado = document.getElementById("text6");
+//Escribe un programa que pida una frase y escriba cuántas vocales hay en la frase.
+let btn = document.getElementById('btn6');
+btn6.addEventListener('click',findA);
+function findA (){
+    let text = document.getElementById("input6").value;
+    let count = [];
+	for(let i = 0; i < input6.length; i++) {
+		if (input6[i] === "a") count.push(i);
+		if (input6[i] === "e") count.push(i);
+		if (input6[i] === "i") count.push(i);
+		if (input6[i] === "o") count.push(i);
+		if (input6[i] === "u") count.push(i);
 
-function numberOfVowels() {
-    let chain = inputUsed.value;
-    let characterNumber = chain.length;
-    chain = chain.toUpperCase();  
-    let vowels;
-    let counter = 0;
-    let i;
-    for (i = 0; i < characterNumber; i++) {
-        vowels = chain.charAt(i); 
-        if ((vowels == "A") || (vowels == "E") || (vowels == "I") || (vowels == "O") || (vowels == "U")) {
-            counter++;
-        }
-    }
-    resultado.innerHTML = `el total de vocales ${counter}`;
+	}
+	let numbOfvocals = document.getElementById("text6").innerHTML = count.length;
+    text6.innerHTML = `el numero de vocales que aparecen es : ${numbOfvocals}`
 }
-button.addEventListener("click", numberOfVowels);

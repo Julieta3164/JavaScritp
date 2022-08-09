@@ -1,6 +1,5 @@
-//Escribe un programa que pida una frase y escriba las vocales que aparecen
 
-let btn = document.getElementById('btn5');
+let btn5=document.getElementById('btn5');
 btn5.addEventListener('click',Search);
 
 function Search () {
