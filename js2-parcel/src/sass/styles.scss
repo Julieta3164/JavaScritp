@@ -23,7 +23,29 @@ main {
     width: auto;
     border: 2px solid black;
 }
+button{
+    width: 10%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: solid 2px blue;
+    background-color: rgb(176, 176, 240);
+}
 
+input{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 15px;
+    
+}
+::placeholder{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
 
 .micro1{
     margin: 2%;
