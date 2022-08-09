@@ -1,44 +1,18 @@
-let usedInput = document.getElementById("input7");
-let button = document.getElementById("btn7");
-let resultado = document.getElementById("text7")
+//Escribe un programa que pida una frase y escriba cuántas veces aparecen cada una de las vocales
 
+let btn7 = document.getElementById('btn7');
+btn7.addEventListener('click',countVowels);
+let text7 = document.getElementById('text7')
 
+function countVowels (){
 
-function consultrText() {
+let input7 = document.getElementById('input7').value
+let resultado = []
+let vocals=['a','e','i','o','u']
 
-    let separateText = usedInput.value.toLowerCase();
+vocals.forEach(vocal=>{
+resultado.push(`Contiene: ${input7.split('').filter(letra => letra == vocal).length} ${vocal}`)
+})
 
-    return separateText;
+text7.innerHTML= resultado.join(',')
 }
-function searchForVowels() {
-
-    let a, e, i, o, u
-    a = e = i = o = u = 0
-    let letters = consultrText();
-
-
-    for (k = 0; k < letters.length; k++) {
-
-        switch (letters[k]) {
-            case "a":
-                a++;
-                break;
-            case "e":
-                e++;
-                break;
-            case "i":
-                i++;
-                break;
-            case "o":
-                o++;
-                break;
-            case "u":
-                u++;
-                break;
-        }
-    }
-    resultado.innerHTML = `<p> el numero de a son ${a}</p> <p> el numero de e son ${e} </p>
-    <p> el numero de i son ${i}</p> <p> el numero de o son ${o}</p> <p> el numero de u son ${u}</p>`
-}
-
-button.addEventListener("click", searchForVowels)
